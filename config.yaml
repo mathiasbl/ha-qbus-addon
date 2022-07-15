@@ -12,3 +12,4 @@ arch:
 startup: services
 services:
   - mqtt:need
+host_network: true #to access qbus controller
