@@ -11,4 +11,4 @@ password=$(bashio::services "mqtt" "password")
 port=$(bashio::services "mqtt" "port")
 username=$(bashio::services "mqtt" "username")
 
-exec usr/bin/qbus/./qbusMqttGw  -logbuflevel -1 -logtostderr true -storagedir /opt/qbus -mqttbroker "tcp://$host:$port" -mqttuser "$username" -mqttpassword "$password"
+exec usr/bin/qbus/./qbusMqttGw -serial="QBUSMQTTGW" -logbuflevel -1 -logtostderr true -storagedir /opt/qbus -mqttbroker "tcp://$host:$port" -mqttuser "$username" -mqttpassword "$password"
