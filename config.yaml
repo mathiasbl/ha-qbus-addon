@@ -1,0 +1,14 @@
+name: "QBUS Addon"
+description: "QBUS Addon"
+version: "1.0.0"
+slug: "qbus"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+services:
+  - mqtt:need
